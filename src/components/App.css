@@ -1,0 +1,128 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: 0;
+}
+
+/* Header */
+.header {
+  background-color: #282c34;
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  margin-bottom: 20px;
+}
+
+.headerTitle {
+  padding: 10px 0px;
+  margin-left: 30px;
+  font-size: calc(12px + 1.5vw);
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  letter-spacing: 10px;
+}
+
+.headerSubTitle {
+  letter-spacing: 1px;
+  font-style: italic;
+  color: #78f4669e;
+  margin-left: 60px;
+}
+/* End of Header */
+
+input {
+  margin-left: auto;
+  margin-right: 20px;
+  border-radius: 5px;
+  height: 30px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-indent: 5px;
+  border: grey 2px solid;
+  width: 300px;
+}
+
+.headerBottomLine {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+input:focus {
+  border: #19e61980 2px solid;
+  outline: #19e61980 2px solid;
+}
+
+/* Main Content */
+.app-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  justify-content: center;
+  width: 450px;
+}
+.someSuggestions {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px;
+  width: 90px;
+  height: 49px;
+  border-radius: 50px;
+  background-color: white;
+  transition: 0.15s;
+  text-transform: uppercase;
+  border: 1px black solid;
+}
+
+button:hover {
+  background-color: #19e61980 !important;
+  border: #19e61980 2px solid;
+  outline: #19e61940 1px solid;
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+.main-image {
+  width: 100px;
+  height: 130px;
+  transition: 0.2s;
+  border: transparent 3px solid;
+  border-radius: 5px;
+}
+.main-image:hover {
+  transform: scale(1.05);
+  border: red solid 3px;
+}
+
+/* End of Main Content */
+
+/* Footer */
+.footer {
+  background-color: #282c34;
+  min-height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 1vmin);
+  color: white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+/* End of Footer */
+
+a {
+  color: #61dafb;
+}
