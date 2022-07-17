@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Smart-Chef/static/css/main.b4fcc85e.css",
-    "main.js": "/Smart-Chef/static/js/main.f87447e4.js",
+    "main.css": "/Smart-Chef/static/css/main.d705fa80.css",
+    "main.js": "/Smart-Chef/static/js/main.8c690802.js",
     "index.html": "/Smart-Chef/index.html",
-    "main.b4fcc85e.css.map": "/Smart-Chef/static/css/main.b4fcc85e.css.map",
-    "main.f87447e4.js.map": "/Smart-Chef/static/js/main.f87447e4.js.map"
+    "main.d705fa80.css.map": "/Smart-Chef/static/css/main.d705fa80.css.map",
+    "main.8c690802.js.map": "/Smart-Chef/static/js/main.8c690802.js.map"
   },
   "entrypoints": [
-    "static/css/main.b4fcc85e.css",
-    "static/js/main.f87447e4.js"
+    "static/css/main.d705fa80.css",
+    "static/js/main.8c690802.js"
   ]
 }
