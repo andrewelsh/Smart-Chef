@@ -18,6 +18,7 @@ function App() {
       <center>
         <p className="someSuggestions">Let's See What You Can Make !</p>
         <div className="app-flex">{mappedData}</div>
+
         {mappedRecipeData}
       </center>
       <Footer />
