@@ -7,11 +7,12 @@ import Board from "./Board";
 import recipeData from "../recipeData";
 
 function App() {
-  const mappedRecipeData = data.map((data) => (
+  const mappedRecipeData = recipeData.map((data) => (
     <Board key={data.title} data={data} />
   ));
 
   const mappedData = data.map((x) => <Main key={x.title} x={x} />);
+
   return (
     <div className="App">
       <Header />

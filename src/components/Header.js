@@ -1,13 +1,13 @@
 import React from "react";
+// <input id="searchBar" placeholder="Add An Item ..." />
 
-const Header = () => {
+const Header = (props) => {
+  console.log(props.x);
   return (
     <div className="header">
       <p className="headerTitle">Smart Chef</p>
       <div className="headerBottomLine">
-        <p className="headerSubTitle">Whats on your shelf ?</p>
-        <input placeholder="Add An Item ..."></input>
-        <button className="reset"> RESET</button>
+        <p className="headerSubTitle">Whats In Your Fridge ?</p>
       </div>
     </div>
   );

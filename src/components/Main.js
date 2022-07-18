@@ -12,31 +12,16 @@ const Main = (props) => {
     now === "✓" ? setButtonSelected(props.x.title) : setButtonSelected("✓");
     now === "✓" ? recipes.pop() : recipes.push(props.x.title);
 
-    if (recipes.sort().join("") == recipeData[0].inc.sort().join("")) {
-      document.getElementById(
-        "board"
-      ).outerHTML = `<img src="https://cdn.loveandlemons.com/wp-content/uploads/2021/05/scrambled-eggs-1-698x1024.jpg" alt="Girl in a jacket" width="300" height="200">`;
-    }
-    document.getElementById("board").outerHTML = "";
-
-    if (recipes.sort().join("") == recipeData[1].inc.sort().join("")) {
-      document.getElementById(
-        "board"
-      ).outerHTML = `<img src=" https://i.etsystatic.com/24708295/r/il/323fde/3513312575/il_794xN.3513312575_q4ag.jpg" alt="Girl in a jacket" width="300" height="200">`;
-    }
-    if (recipes.sort().join("") == recipeData[2].inc.sort().join("")) {
-      console.log("matched French Toast");
-    }
-
-    // if (recipeData[0].inc == recipes[0]) {
-    //   console.log("Matched");
-    // }
-
-    // if (props.x.title === recipes[1]) {
-    //   console.log(`Matched ${props.x.title}`);
-    // }
-
     btnColorChange();
+    for (let i = 0; i < recipeData.length; i++) {
+      if (recipeData[i].inc.every((data) => recipes.includes(data))) {
+        document.getElementById(
+          "board"
+        ).innerHTML = `<h4>${recipeData[i].title}</h4><a href = ${recipeData[i].image} > <img src = ${recipeData[i].image} /> </a>`;
+
+        // console.log(recipeData[i].title);
+      }
+    }
   }
   // End of IF Statement
 
